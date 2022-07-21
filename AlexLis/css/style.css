@@ -281,6 +281,38 @@ h6 {
           flex-direction: column;
 }
 
+
+.hint {
+  padding-right: 40px;
+  margin-top: 3;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  animation: flash linear 1s infinite;
+  font-family: "Mon Amour";
+}
+
+
+.hint-icon {
+  position: relative;
+}
+
+.hint-icon::after {
+  position: absolute;
+  top: 12px;
+  right: -40px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  content: url('../img/image-click.svg');
+}
+
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .3; } 
+	100% { opacity: 1; }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
