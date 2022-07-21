@@ -50,6 +50,38 @@
 }
 
 
+.hint {
+  padding-right: 40px;
+  margin-top: 0;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  animation: flash linear 1s infinite;
+  font-family: "Mon Amour";
+}
+
+
+.hint-icon {
+  position: relative;
+}
+
+.hint-icon::after {
+  position: absolute;
+  top: 12px;
+  right: -40px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  content: url('../img/image-click.svg');
+}
+
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .3; } 
+	100% { opacity: 1; }
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -168,7 +200,7 @@ color: black;
 
 
 .scene {
-  margin: 40px 20px;
+  margin: 20px 20px;
   perspective: 600px;
   @media screen and (max-width: 500px) {
   margin: 40px 15px;
