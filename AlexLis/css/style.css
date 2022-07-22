@@ -460,14 +460,14 @@ body {
 }
 
 .scene {
-  margin: 40px 20px;
+  margin: 20px 20px;
   -webkit-perspective: 600px;
           perspective: 600px;
 }
 
 @media screen and (max-width: 500px) {
   .scene {
-    margin: 40px 15px;
+    margin: 20px 15px;
   }
 }
 
