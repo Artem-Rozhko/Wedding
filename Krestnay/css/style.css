@@ -390,6 +390,8 @@ body {
 
 @media screen and (max-width: 420px) {
   .t3 {
+    display: flex;
+    flex-direction:column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
