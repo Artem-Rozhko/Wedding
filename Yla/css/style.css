@@ -281,6 +281,38 @@ h6 {
           flex-direction: column;
 }
 
+
+.hint {
+  padding-right: 40px;
+  margin-top: 3;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  animation: flash linear 1s infinite;
+  font-family: "Mon Amour";
+}
+
+
+.hint-icon {
+  position: relative;
+}
+
+.hint-icon::after {
+  position: absolute;
+  top: 12px;
+  right: -40px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  content: url('../img/image-click.svg');
+}
+
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .3; } 
+	100% { opacity: 1; }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -359,6 +391,7 @@ body {
   .t3 {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -427,14 +460,14 @@ body {
 }
 
 .scene {
-  margin: 40px 20px;
+  margin: 20px 20px;
   -webkit-perspective: 600px;
           perspective: 600px;
 }
 
 @media screen and (max-width: 500px) {
   .scene {
-    margin: 40px 15px;
+    margin: 20px 15px;
   }
 }
 
